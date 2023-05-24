@@ -17,18 +17,32 @@ The first step was to use the automated browsing to visit the [Mars news site](h
      'preview': "For the first time in its eight years orbiting Mars, NASA’s MAVEN mission witnessed two different types of ultraviolet aurorae simultaneously, the result of solar storms that began on Aug. 27."}
 
 ### Part 2: ## Scrape and Analyze Mars Weather Data
-In this part of the project, I scraped and analyzed Mars weather data. To begin, I used the automated browsing to visit the <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">Mars Temperature Data Site</a>, inspected the page to identify the HTML table and then assembled the scraped data into a pandas dataframe. An explanation of the column headings is provided below:
+In this part of the project, I scraped and analyzed Mars weather data. To begin, I used the automated browsing to visit the <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">Mars Temperature Data Site</a>, inspected the page to identify the HTML table and then assembled the scraped data into a pandas dataframe. An brief description of the column headings is provided below:
 
-> id: the identification number of a single transmission from the Curiosity rover
-terrestrial_date: the date on Earth
-sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars
-ls: the solar longitude
-month: the Martian month
-min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
-pressure: The atmospheric pressure at Curiosity's location
+> - id: the identification number of a single transmission from the Curiosity rover
+        terrestrial_date: the date on Earth
+> - sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars
+> - ls: the solar longitude
+> - month: the Martian month
+> - min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
+> - pressure: The atmospheric pressure at Curiosity's location
 
-### Step 2: Visualizations
--
+Before visualizing the data, I examined the data types associated with each column. I observed that each datatype was presented as an object. I then employed the Pandas astype, to_numeric and to_datetime methods to convert object into float, numeric and datetime respectively.
+
+#### Visualizations
+I analyzed the dataset to answer the following questions:
+- What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question, I estimated the average minimum daily temperature for all of the months. The result is plotted as a bar chart below:
+
+![image](https://github.com/Jayplect/mars-webscraping/assets/107348074/35b3a68b-8fc0-4e47-aff6-e2c86f5ee89a)
+
+- Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question, I calculated the average daily atmospheric pressure of all the months and plotted the result as shown below:
+
+![image](https://github.com/Jayplect/mars-webscraping/assets/107348074/280975fb-72e8-4bc2-b7e2-26e0265954d2)
+
+- How many terrestrial (Earth) days exist in a Martian year? Here I estimated how many days elapse on Earth in the time that Mars circles the Sun once and visually estimated the result by plotting the daily minimum temperature: 
+
+![image](https://github.com/Jayplect/mars-webscraping/assets/107348074/84ee9204-a91d-4326-b405-a613ee836f7c)
+
 ## Summary of Results
 - On average, the third month has the coldest minimum temperature on Mars, and the eighth month is the warmest. But it is always very cold there in human terms!
 - Atmospheric pressure is, on average, lowest in the sixth month and highest in the ninth.
