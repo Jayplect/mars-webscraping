@@ -7,7 +7,7 @@ This project focuses on full web-scraping and data analysis. To web srcape, I id
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Dataset
-The news article titles, summaries, dates, and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. 
+The news article titles, summaries, dates, and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. See references for more details.
 
 ## Project Steps
 ### Part 1: Merging both data sets 
