@@ -7,7 +7,7 @@ This project focuses on full web-scraping and data analysis. To web srcape, I id
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Dataset
-The static [Mars news site](https://static.bc-edx.com/data/web/mars_news/index.html) website can be found here while the static Mars temperature data can be found <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">here</a>. See references for more details.
+The static website can be found here-[Mars news site](https://static.bc-edx.com/data/web/mars_news/index.html) while the static Mars temperature data can be found <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">here</a>. See references for more details.
 
 ## Project Steps
 ### Part 1: Scrape Titles and Preview Text from Mars News
