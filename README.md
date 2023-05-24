@@ -1,5 +1,5 @@
 ## Description
-This project focuses on full web-scraping and data analysis. To web srcape, I identified HTML elements on a page,  identified their id and class attributes, and used these attributes to extract information via both automated browsing and HTML parsing. The project is divided into two parts. In the first part, I web scraped titles and preview text from Mars news articles on a webpage while in the second part, I scraped and analyze Mars weather data, which exists in a table.
+This project focuses on full web-scraping and data analysis. To web srcape, I identified HTML elements on a page,  identified their id and class attributes, and used these attributes to extract information via both automated browsing and HTML parsing. The project is divided into two parts. In the first part, I scraped titles and preview text from a static Mars news articles webpage while in the second part, I scraped and analyzed Mars weather data from an HTML table in a static Mars weather webpage.
 
 ## Library
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
@@ -7,17 +7,17 @@ This project focuses on full web-scraping and data analysis. To web srcape, I id
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Dataset
-The news article titles, summaries, dates, and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. See references for more details.
+The static [Mars news site](https://static.bc-edx.com/data/web/mars_news/index.html) website can be found here while the static Mars temperature data can be found <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">here</a>. See references for more details.
 
 ## Project Steps
 ### Part 1: Scrape Titles and Preview Text from Mars News
-The first step was to use the automated browsing to visit the [Mars news site](https://static.bc-edx.com/data/web/mars_news/index.html) and then inspect the page to identify which elements to scrape. I inspected the page using Chrome DevTools. Subsequently, I created a **Beautiful Soup** object and used it to extract the text elements from the website. I also added a python time sleep function to cause a two second delay in the execution of the program to effectively deal with issues that may arise when the webpage is not loading with the speed the computer is attempting to process it with. Finally, I then extracted the titles and preview text of the news articles that I scraped and stored the scraped results in a Python data structure as follows:
+The first step was to use the automated browsing to visit the Mars news site and then inspect the page to identify which elements to scrape. I inspected the page using Chrome DevTools. Subsequently, I created a **Beautiful Soup** object and used it to extract the text elements from the website. I also added a python time sleep function to cause a two second delay in the execution of the program to effectively deal with issues that may arise when the webpage is not loading with the speed the computer is attempting to process it with. Finally, I then extracted the titles and preview text of the news articles that I scraped and stored the scraped results in a Python data structure as follows:
 
     {'title': "NASA's MAVEN Observes Martian Light Show Caused by Major Solar Storm", 
      'preview': "For the first time in its eight years orbiting Mars, NASA’s MAVEN mission witnessed two different types of ultraviolet aurorae simultaneously, the result of solar storms that began on Aug. 27."}
 
 ### Part 2: ## Scrape and Analyze Mars Weather Data
-In this part of the project, I scraped and analyzed Mars weather data. To begin, I used the automated browsing to visit the <a href="https://static.bc-edx.com/data/web/mars_facts/temperature.html">Mars Temperature Data Site</a>, inspected the page to identify the HTML table and then assembled the scraped data into a pandas dataframe. An brief description of the column headings is provided below:
+In this part of the project, I scraped and analyzed Mars weather data. To begin, I used the automated browsing to visit the Mars Temperature Data Site, inspected the page to identify the HTML table and then assembled the scraped data into a pandas dataframe. An brief description of the column headings is provided below:
 
 > - id: the identification number of a single transmission from the Curiosity rover
         terrestrial_date: the date on Earth
@@ -49,4 +49,4 @@ I analyzed the dataset to answer the following questions:
 - The distance from peak to peak is roughly 1425-750, or 675 days. A year on Mars appears to be about 675 days from the plot. Internet search confirms that a Mars year is equivalent to 687 earth days.
 
 ## References
-<a href ="https://static.bc-edx.com/data/web/mars_news/index.html">The Mars News website</a> is operated by edX Boot Camps LLC for educational purposes only. Images are used according to the <a href ="https://www.jpl.nasa.gov/jpl-image-use-policy">JPL Image Use Policy</a>, courtesy NASA/JPL-Caltech.
+The news article titles, summaries, dates, tables and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. <a href ="https://static.bc-edx.com/data/web/mars_news/index.html">The Mars News website</a> is operated by edX Boot Camps LLC for educational purposes only. Images are used according to the <a href ="https://www.jpl.nasa.gov/jpl-image-use-policy">JPL Image Use Policy</a>, courtesy NASA/JPL-Caltech.
