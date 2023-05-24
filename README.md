@@ -7,7 +7,7 @@ This project focuses on full web-scraping and data analysis. To web srcape, I id
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Dataset
-<a href ="https://static.bc-edx.com/data/web/mars_news/index.html"The Mars News website</a>. The news article titles, summaries, dates, and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. Images are used according to the <a href ="https://www.jpl.nasa.gov/jpl-image-use-policy">JPL Image Use Policy</a>, courtesy NASA/JPL-Caltech.
+The news article titles, summaries, dates, and images were scraped from <a href ="https://mars.nasa.gov/">NASA's Mars News</a> website in November 2022. 
 
 ## Project Steps
 ### Part 1: Merging both data sets 
@@ -26,4 +26,4 @@ The first step was to use the automated browsing to visit the [Mars news site](h
 - The distance from peak to peak is roughly 1425-750, or 675 days. A year on Mars appears to be about 675 days from the plot. Internet search confirms that a Mars year is equivalent to 687 earth days.
 
 ## References
-The Mars News website is operated by edX Boot Camps LLC for educational purposes only. Images are used according to the <a href ="https://www.jpl.nasa.gov/jpl-image-use-policy">JPL Image Use Policy</a>, courtesy NASA/JPL-Caltech.
+<a href ="https://static.bc-edx.com/data/web/mars_news/index.html">The Mars News website</a> is operated by edX Boot Camps LLC for educational purposes only. Images are used according to the <a href ="https://www.jpl.nasa.gov/jpl-image-use-policy">JPL Image Use Policy</a>, courtesy NASA/JPL-Caltech.
